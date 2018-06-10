@@ -8,7 +8,7 @@
         background-position:center center !important;
         background-attachment:fixed !important;
         background-image:url('https://drive.google.com/uc?export=view&id=1GobA7jFOEVydYBCDyGSapUwiw5FCqElc') !important;
-        <!--background-image:url('https://i.imgur.com/QGrOW9g.jpg') !important-->
+        /*background-image:url('https://i.imgur.com/QGrOW9g.jpg') !important*/
         background-repeat:no-repeat !important;
         background-size:cover;
       }
@@ -34,13 +34,50 @@
         display: block;  /*與padding搭配使用*/
         padding: 16px;
       }
-      a:hover{
+      .word a{
+        border: solid;
+        border-color: plum;
+        text-decoration: none;/*去除底線*/
+        text-align: center;
+        color: black;
+        font: 2em sans-serif;
+        display: block;  /*與padding搭配使用*/
+        padding: 50px;
+      }
+      nav a:hover{
         background-color:#000000;
       }
       .card {
         background-color: white;
         padding: 20px;
-        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      section{
+        margin-bottom: 50px;
+        width: 1px;
+        height: 1px;
+      }
+      .leftcolumn{
+        float: left;
+        margin-left: 20px;
+        margin-right: 40px;
+        width: 60%;
+      }
+      .rightcolumn {
+        float: left;
+        width: 28%;
+        background-color: white;
+        padding-left: 20px;
+      }
+      .fakeimg {
+        background-color: white;
+        width: auto;
+        padding: 20px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
       }
       #bo{
         width: 100%;
@@ -77,20 +114,32 @@
       <h1>Stella-X</h1>
       <h3 style="margin-top: 50px">這裡是Stella的個人空間~~~~<br>可以四處撒野唷~~~~(誤</h3>
     </div>
-    <section id="page_1">
-    <div class="card" style="width: 60%;">
-      <h2>【情報】【新楓之谷發薪日】登入領薪水</h2>
-      <h5 style="text-align: right">2018/6/10</h5>
-      <div style="text-align: center">
-        <img  style="text-align: right" src="https://tw.webimage.beanfun.com/Uploading/imgupload/201806/20180608185823b74a5b62.png"></img>
-      </div>
-    </div>
-    </section>
-    <div class="card" style="width: 60%;">
-      <h2>【情報】【新楓之谷發薪日】登入領薪水</h2>
-      <h5 style="text-align: right">2018/6/10</h5>
-      <div style="text-align: center">
-        <img  style="text-align: right" src="https://tw.webimage.beanfun.com/Uploading/imgupload/201806/20180608185823b74a5b62.png"></img>
+    
+    <div class="row">
+      <section id="page_1"></section>
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>【情報】【新楓之谷發薪日】登入領薪水</h2>
+            <h5 style="text-align: right">修改日期:2018/6/10</h5>
+            <div style="text-align: center">
+              <img  style="text-align: right" src="https://tw.webimage.beanfun.com/Uploading/imgupload/201806/20180608185823b74a5b62.png"></img>
+            </div>
+          </div>
+          <section id="page_2"></section>
+          <div class="card">
+            <h2>【筆記】【Stella-X の Git】</h2>
+            <h5 style="text-align: right">修改日期:2018/6/10</h5>
+            <iframe height="1650px" width="100%" frameborder="unset" src="https://hackmd.io/s/SkvGFUfym"></iframe>
+          </div>
+        </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Popular Post</h2>
+          <div class="fakeimg word"><a href="#page_2" style="display: block;">Stella-X の Git </a></div>
+          <div class="fakeimg"><a href="#"><img src="https://i.imgur.com/9FKwM4X.jpg" style="width:100%;height: auto;"></a></div>
+          <div class="fakeimg"><a href="#"><img src="https://i.imgur.com/QGrOW9g.jpg" style="width:100%;height: auto;"></a></div>
+          <div class="fakeimg"><a href="#page_1"><img src="https://tw.webimage.beanfun.com/Uploading/imgupload/201806/20180608185823b74a5b62.png" style="width:100%;height: auto;"></a></div>
+        </div>
       </div>
     </div>
   </body>
